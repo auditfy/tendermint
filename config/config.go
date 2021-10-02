@@ -133,6 +133,10 @@ func (cfg *Config) SetRoot(root string) *Config {
 	return cfg
 }
 
+func NewLocalClientCreator() {
+	return nil
+}
+
 // ValidateBasic performs basic validation (checking param bounds, etc.) and
 // returns an error if any check fails.
 func (cfg *Config) ValidateBasic() error {
